@@ -1,0 +1,10 @@
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\bin\Debug\GangrenaShop.exe.config
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\bin\Debug\GangrenaShop.exe
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\bin\Debug\GangrenaShop.pdb
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.csprojAssemblyReference.cache
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Form1.resources
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Properties.Resources.resources
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.csproj.GenerateResource.cache
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.csproj.CoreCompileInputs.cache
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.exe
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.pdb
