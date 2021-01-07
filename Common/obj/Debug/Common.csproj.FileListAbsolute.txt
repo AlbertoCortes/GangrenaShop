@@ -1,0 +1,6 @@
+C:\Users\Curso\Documents\Academia\GangrenaShop\Common\bin\Debug\Common.dll
+C:\Users\Curso\Documents\Academia\GangrenaShop\Common\bin\Debug\Common.pdb
+C:\Users\Curso\Documents\Academia\GangrenaShop\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\Curso\Documents\Academia\GangrenaShop\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Curso\Documents\Academia\GangrenaShop\Common\obj\Debug\Common.dll
+C:\Users\Curso\Documents\Academia\GangrenaShop\Common\obj\Debug\Common.pdb

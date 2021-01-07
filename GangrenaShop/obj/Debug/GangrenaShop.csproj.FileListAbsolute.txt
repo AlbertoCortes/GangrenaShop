@@ -8,3 +8,6 @@ C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaSh
 C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.csproj.CoreCompileInputs.cache
 C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.exe
 C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.pdb
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\bin\Debug\Common.dll
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\bin\Debug\Common.pdb
+C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.csproj.CopyComplete
