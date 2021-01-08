@@ -12,6 +12,8 @@ namespace GangrenaShop.Main
 {
     public partial class Login : Form
     {
+        private string usuerTest = "beto15";
+        private string passTest = "Iom77aa";
         protected override CreateParams CreateParams  // crea pequeña sombra en borderless form
         {
             get
@@ -38,6 +40,7 @@ namespace GangrenaShop.Main
         private void txt_contra_KeyPress(object sender, KeyPressEventArgs e)
         {
             esc_salir(sender, e);
+            enter_key_press(sender, e);
         }
 
 
@@ -52,6 +55,29 @@ namespace GangrenaShop.Main
                 }
                 e.Handled = true;
             }
+        }
+        private void enter_key_press(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Enter)
+            {
+                login();
+            }
+        }
+
+        private void login() { 
+            if(txt_usuario.Text == usuerTest && txt_contra.Text == passTest){
+                //Abrir menu y cerrar este formularoi
+            }else {
+                MessageBox.Show("Error, el usuario y la contraseña no coinciden");
+                txt_contra.Text = "";
+                txt_contra.Select();
+            }
+        
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            login();
         }
     }
 }
