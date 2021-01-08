@@ -9,15 +9,6 @@ namespace Common
 {
     public class Common
     {
-        public  CreateParams CreateParams
-        {
-            get
-            {
-                const int CS_DROPSHADOW = 0x20000;
-                CreateParams cp = this.CreateParams;
-                cp.ClassStyle |= CS_DROPSHADOW;
-                return cp;
-            }
-        }
+        
     }
 }

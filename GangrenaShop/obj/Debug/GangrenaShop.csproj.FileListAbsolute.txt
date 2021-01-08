@@ -11,3 +11,17 @@ C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaSh
 C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\bin\Debug\Common.dll
 C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\bin\Debug\Common.pdb
 C:\Users\Curso\Documents\Academia\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.csproj.CopyComplete
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\bin\Debug\GangrenaShop.exe.config
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\bin\Debug\GangrenaShop.exe
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\bin\Debug\GangrenaShop.pdb
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\bin\Debug\Common.dll
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\bin\Debug\Common.pdb
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.csprojAssemblyReference.cache
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Form1.resources
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Properties.Resources.resources
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.csproj.GenerateResource.cache
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.csproj.CoreCompileInputs.cache
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.csproj.CopyComplete
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.exe
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.pdb
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Main.Login.resources

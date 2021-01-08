@@ -8,5 +8,6 @@ namespace Buissness
 {
     public class Class1
     {
+
     }
 }

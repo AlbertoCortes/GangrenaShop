@@ -4,3 +4,9 @@ C:\Users\Curso\Documents\Academia\GangrenaShop\Common\obj\Debug\Common.csprojAss
 C:\Users\Curso\Documents\Academia\GangrenaShop\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 C:\Users\Curso\Documents\Academia\GangrenaShop\Common\obj\Debug\Common.dll
 C:\Users\Curso\Documents\Academia\GangrenaShop\Common\obj\Debug\Common.pdb
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\Common\bin\Debug\Common.dll
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\Common\bin\Debug\Common.pdb
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\Common\obj\Debug\Common.csprojAssemblyReference.cache
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\Common\obj\Debug\Common.dll
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\Common\obj\Debug\Common.pdb
