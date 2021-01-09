@@ -72,7 +72,6 @@ namespace GangrenaShop.Main
                 txt_contra.Text = "";
                 txt_contra.Select();
             }
-        
         }
 
         private void button1_Click(object sender, EventArgs e)
