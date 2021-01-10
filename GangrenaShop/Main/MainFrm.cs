@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GangrenaShop.PuntoVenta;
 
 namespace GangrenaShop.Main
 {
@@ -91,5 +92,72 @@ namespace GangrenaShop.Main
                 this.WindowState = FormWindowState.Normal;
             }
         }
+
+
+
+
+
+
+        private void AbrirFormulario<T>() where T : Form, new()
+        {
+            Form formulario = panel_menu.Controls.OfType<T>().FirstOrDefault();
+            if (formulario != null)
+            {
+                //Si la instancia esta minimizada la dejamos en su estado normal
+                if (formulario.WindowState == FormWindowState.Minimized)
+                {
+                    formulario.WindowState = FormWindowState.Normal;
+                }
+                //Si la instancia existe la pongo en primer plano
+                formulario.BringToFront();
+                return;
+            }
+            //Se abre el form
+            formulario = new T();
+            formulario.TopLevel = false;
+            panel_menu.Controls.Add(formulario);
+            panel_menu.Tag = formulario;
+            formulario.Show();
+        }
+
+//        AbrirFormulario<PuntoVentaForm>();
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var form = Application.OpenForms.OfType<PuntoVentaForm>().FirstOrDefault();
+            PuntoVentaForm hijo = form ?? new PuntoVentaForm();
+            AddFormInPanel(hijo);   
+
+        }
+
+
+
+        private void AddFormInPanel(Form fh)
+        {
+            if (this.superPanel.Controls.Count > 0)
+                this.superPanel.Controls.RemoveAt(0);
+            fh.TopLevel = false;
+            fh.FormBorderStyle = FormBorderStyle.None;
+            fh.Dock = DockStyle.Fill;
+            this.superPanel.Controls.Add(fh);
+            this.superPanel.Tag = fh;
+            fh.Show();
+        }
+
+        private void panel_ventas_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            var form = Application.OpenForms.OfType<PuntoVentaForm>().FirstOrDefault();
+            PuntoVentaForm hijo = form ?? new PuntoVentaForm();
+            AddFormInPanel(hijo);
+        }
+
+        private void pictureBox1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            var form = Application.OpenForms.OfType<MenuPanelForm>().FirstOrDefault();
+            MenuPanelForm hijo = form ?? new MenuPanelForm();
+            AddFormInPanel(hijo);
+        }
+
+        
     }
 }

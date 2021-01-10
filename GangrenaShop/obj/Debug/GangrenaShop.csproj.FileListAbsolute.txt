@@ -26,3 +26,5 @@ A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Deb
 A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.pdb
 A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Main.Login.resources
 A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Main.MainFrm.resources
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.PuntoVenta.PuntoVentaForm.resources
+A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Main.MenuPanelForm.resources

@@ -64,8 +64,20 @@
     <Compile Include="Main\MainFrm.Designer.cs">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main\MenuPanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MenuPanelForm.Designer.cs">
+      <DependentUpon>MenuPanelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PuntoVenta\PuntoVentaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PuntoVenta\PuntoVentaForm.Designer.cs">
+      <DependentUpon>PuntoVentaForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main\MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MenuPanelForm.resx">
+      <DependentUpon>MenuPanelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +100,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="PuntoVenta\PuntoVentaForm.resx">
+      <DependentUpon>PuntoVentaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,7 +124,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Clientes\" />
-    <Folder Include="PuntoVenta\" />
     <Folder Include="Usuarios\" />
     <Folder Include="Videojuegos\" />
   </ItemGroup>
