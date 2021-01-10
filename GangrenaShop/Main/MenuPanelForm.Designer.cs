@@ -29,6 +29,7 @@ namespace GangrenaShop.Main
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel_menu = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,6 +57,13 @@ namespace GangrenaShop.Main
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.toolTipVentas = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipCatalogo = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipClientes = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipProveedor = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipEmpleado = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTipAdmin = new System.Windows.Forms.ToolTip(this.components);
             this.panel_menu.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -93,6 +101,7 @@ namespace GangrenaShop.Main
             this.panel_menu.Name = "panel_menu";
             this.panel_menu.Size = new System.Drawing.Size(941, 595);
             this.panel_menu.TabIndex = 2;
+            this.panel_menu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_menu_Paint);
             // 
             // label8
             // 
@@ -163,7 +172,7 @@ namespace GangrenaShop.Main
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(717, 50);
+            this.panel6.Location = new System.Drawing.Point(721, 51);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(162, 197);
             this.panel6.TabIndex = 0;
@@ -369,6 +378,11 @@ namespace GangrenaShop.Main
             this.label1.Text = "Ventas";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // MenuPanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -437,5 +451,12 @@ namespace GangrenaShop.Main
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolTip toolTipVentas;
+        private System.Windows.Forms.ToolTip toolTipCatalogo;
+        private System.Windows.Forms.ToolTip toolTipClientes;
+        private System.Windows.Forms.ToolTip toolTipProveedor;
+        private System.Windows.Forms.ToolTip toolTipEmpleado;
+        private System.Windows.Forms.ToolTip toolTipAdmin;
     }
 }

@@ -58,15 +58,18 @@ namespace GangrenaShop.Main
         }
         private void enter_key_press(object sender, KeyPressEventArgs e)
         {
-            if(e.KeyChar == (char)Keys.Enter)
+            if (e.KeyChar == (char)Keys.Enter)
             {
                 login();
             }
         }
 
-        private void login() { 
-            if(txt_usuario.Text == usuerTest && txt_contra.Text == passTest){
+        private void login() {
+            if (txt_usuario.Text == usuerTest && txt_contra.Text == passTest) {
                 //Abrir menu y cerrar este formularoi
+                this.Hide();
+                MainFrm mnn = new MainFrm();
+                mnn.Show();
             }else {
                 MessageBox.Show("Error, el usuario y la contraseña no coinciden");
                 txt_contra.Text = "";
@@ -77,6 +80,11 @@ namespace GangrenaShop.Main
         private void button1_Click(object sender, EventArgs e)
         {
             login();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

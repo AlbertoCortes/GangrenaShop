@@ -34,34 +34,34 @@ namespace GangrenaShop.Main
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panelVideojuegos = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_ventas = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel12 = new System.Windows.Forms.Panel();
-            this.superPanel = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.superPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel_side_menu = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
@@ -74,27 +74,27 @@ namespace GangrenaShop.Main
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_menu.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel11.SuspendLayout();
             this.panelVideojuegos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel_ventas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel12.SuspendLayout();
-            this.superPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.superPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel_side_menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -151,6 +151,16 @@ namespace GangrenaShop.Main
             this.panel8.TabIndex = 0;
             this.panel8.MouseHover += new System.EventHandler(this.panel8_MouseHover);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::GangrenaShop.Properties.Resources.exchange;
+            this.pictureBox6.Location = new System.Drawing.Point(25, 65);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(111, 105);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.DimGray;
@@ -184,6 +194,16 @@ namespace GangrenaShop.Main
             this.panel6.TabIndex = 0;
             this.panel6.MouseHover += new System.EventHandler(this.panel6_MouseHover);
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::GangrenaShop.Properties.Resources.cargo_truck;
+            this.pictureBox5.Location = new System.Drawing.Point(25, 65);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(111, 105);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.DimGray;
@@ -216,6 +236,16 @@ namespace GangrenaShop.Main
             this.panel2.Size = new System.Drawing.Size(162, 197);
             this.panel2.TabIndex = 0;
             this.panel2.MouseHover += new System.EventHandler(this.panel2_MouseHover);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::GangrenaShop.Properties.Resources.cash;
+            this.pictureBox4.Location = new System.Drawing.Point(25, 65);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(111, 105);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
             // 
             // panel4
             // 
@@ -251,6 +281,16 @@ namespace GangrenaShop.Main
             this.panel10.TabIndex = 0;
             this.panel10.MouseHover += new System.EventHandler(this.panel10_MouseHover);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::GangrenaShop.Properties.Resources.badge;
+            this.pictureBox7.Location = new System.Drawing.Point(25, 65);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(111, 105);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 1;
+            this.pictureBox7.TabStop = false;
+            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.DimGray;
@@ -283,6 +323,16 @@ namespace GangrenaShop.Main
             this.panelVideojuegos.Size = new System.Drawing.Size(162, 197);
             this.panelVideojuegos.TabIndex = 0;
             this.panelVideojuegos.MouseHover += new System.EventHandler(this.panelVideojuegos_MouseHover);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::GangrenaShop.Properties.Resources.documents;
+            this.pictureBox3.Location = new System.Drawing.Point(25, 65);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(111, 105);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
             // 
             // panel5
             // 
@@ -317,6 +367,16 @@ namespace GangrenaShop.Main
             this.panel_ventas.TabIndex = 0;
             this.panel_ventas.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panel_ventas_MouseDoubleClick);
             this.panel_ventas.MouseHover += new System.EventHandler(this.panel_ventas_MouseHover);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::GangrenaShop.Properties.Resources.calculator;
+            this.pictureBox2.Location = new System.Drawing.Point(25, 65);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(111, 105);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // panel3
             // 
@@ -356,75 +416,6 @@ namespace GangrenaShop.Main
             this.panel12.Size = new System.Drawing.Size(957, 35);
             this.panel12.TabIndex = 2;
             // 
-            // superPanel
-            // 
-            this.superPanel.Controls.Add(this.panel_menu);
-            this.superPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superPanel.Location = new System.Drawing.Point(196, 36);
-            this.superPanel.Name = "superPanel";
-            this.superPanel.Size = new System.Drawing.Size(957, 634);
-            this.superPanel.TabIndex = 3;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::GangrenaShop.Properties.Resources.exchange;
-            this.pictureBox6.Location = new System.Drawing.Point(25, 65);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(111, 105);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::GangrenaShop.Properties.Resources.cargo_truck;
-            this.pictureBox5.Location = new System.Drawing.Point(25, 65);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(111, 105);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::GangrenaShop.Properties.Resources.cash;
-            this.pictureBox4.Location = new System.Drawing.Point(25, 65);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(111, 105);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::GangrenaShop.Properties.Resources.badge;
-            this.pictureBox7.Location = new System.Drawing.Point(25, 65);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(111, 105);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 1;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::GangrenaShop.Properties.Resources.documents;
-            this.pictureBox3.Location = new System.Drawing.Point(25, 65);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(111, 105);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::GangrenaShop.Properties.Resources.calculator;
-            this.pictureBox2.Location = new System.Drawing.Point(25, 65);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(111, 105);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox9
             // 
             this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -448,6 +439,15 @@ namespace GangrenaShop.Main
             this.pictureBox8.TabIndex = 3;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
+            // superPanel
+            // 
+            this.superPanel.Controls.Add(this.panel_menu);
+            this.superPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superPanel.Location = new System.Drawing.Point(196, 36);
+            this.superPanel.Name = "superPanel";
+            this.superPanel.Size = new System.Drawing.Size(957, 634);
+            this.superPanel.TabIndex = 3;
             // 
             // panel1
             // 
@@ -623,6 +623,7 @@ namespace GangrenaShop.Main
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDoubleClick);
             // 
             // MainFrm
@@ -643,33 +644,33 @@ namespace GangrenaShop.Main
             this.panel_menu.ResumeLayout(false);
             this.panel_menu.PerformLayout();
             this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panelVideojuegos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel_ventas.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel12.ResumeLayout(false);
-            this.superPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.superPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel_side_menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

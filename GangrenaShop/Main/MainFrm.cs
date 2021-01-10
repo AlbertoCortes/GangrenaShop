@@ -27,7 +27,11 @@ namespace GangrenaShop.Main
         public MainFrm()
         {
             InitializeComponent();
-            
+            var form = Application.OpenForms.OfType<MenuPanelForm>().FirstOrDefault();
+            MenuPanelForm hijo = form ?? new MenuPanelForm();
+            AddFormInPanel(hijo);
+
+
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -132,7 +136,7 @@ namespace GangrenaShop.Main
 
 
 
-        private void AddFormInPanel(Form fh)
+        public void AddFormInPanel(Form fh)
         {
             if (this.superPanel.Controls.Count > 0)
                 this.superPanel.Controls.RemoveAt(0);
@@ -153,11 +157,18 @@ namespace GangrenaShop.Main
 
         private void pictureBox1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            
+            
             var form = Application.OpenForms.OfType<MenuPanelForm>().FirstOrDefault();
             MenuPanelForm hijo = form ?? new MenuPanelForm();
             AddFormInPanel(hijo);
+
+           // panel_menu.Show();
         }
 
-        
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
