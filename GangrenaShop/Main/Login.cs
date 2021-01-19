@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Data;
+using System;
 using System.Windows.Forms;
 
 namespace GangrenaShop.Main
@@ -14,6 +8,8 @@ namespace GangrenaShop.Main
     {
         private string usuerTest = "beto15";
         private string passTest = "Iom77aa";
+
+        public Class1 dat = new Class1();
         protected override CreateParams CreateParams  // crea pequeña sombra en borderless form
         {
             get
@@ -79,6 +75,7 @@ namespace GangrenaShop.Main
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var r = dat.getEmpleados();
             login();
         }
 

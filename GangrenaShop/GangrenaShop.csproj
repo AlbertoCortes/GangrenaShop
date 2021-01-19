@@ -121,6 +121,10 @@
       <Project>{fd26c57d-8d7b-4c59-8002-f5606dc9117a}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{d9b997da-4c9c-45ae-a2a4-fedb5ba9ca9c}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Clientes\" />

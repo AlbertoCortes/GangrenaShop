@@ -8,5 +8,13 @@ namespace Data
 {
     public class Class1
     {
+
+        GangrenaShopEntities model = new GangrenaShopEntities();
+
+        public List<Empleados> getEmpleados()
+        {
+            return model.Empleados.ToList();
+
+        }
     }
 }

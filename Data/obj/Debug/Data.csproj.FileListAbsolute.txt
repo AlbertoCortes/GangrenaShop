@@ -1,0 +1,12 @@
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\Data.dll.config
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\Data.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\Data.pdb
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\EntityFramework.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\EntityFramework.xml
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\obj\Debug\Data.csprojAssemblyReference.cache
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\obj\Debug\Data.csproj.CopyComplete
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\obj\Debug\Data.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\obj\Debug\Data.pdb

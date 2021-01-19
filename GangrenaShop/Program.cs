@@ -17,7 +17,7 @@ namespace GangrenaShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainFrm());
+            Application.Run(new Login());
         }
     }
 }
