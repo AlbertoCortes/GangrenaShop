@@ -56,3 +56,5 @@ E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Model.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Newtonsoft.Json.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Model.pdb
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Newtonsoft.Json.xml
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Buissness.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Buissness.pdb

@@ -51,6 +51,7 @@
     <Compile Include="GS_Productos.cs" />
     <Compile Include="GS_Proveedores.cs" />
     <Compile Include="GS_Tipo_pago.cs" />
+    <Compile Include="GS_VariablesSesion.cs" />
     <Compile Include="GS_Ventas.cs" />
     <Compile Include="GS_Ventas_conceptos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,15 +1,16 @@
 ﻿using Data;
 using System;
 using System.Windows.Forms;
+using Buissness;
+using Model;
 
 namespace GangrenaShop.Main
 {
     public partial class Login : Form
     {
-        private string usuerTest = "beto15";
-        private string passTest = "Iom77aa";
 
         public DataClass dat = new DataClass();
+        public BuissnessClass buis = new BuissnessClass();
         protected override CreateParams CreateParams  // crea pequeña sombra en borderless form
         {
             get
@@ -61,10 +62,12 @@ namespace GangrenaShop.Main
         }
 
         private void login() {
-            if (txt_usuario.Text == usuerTest && txt_contra.Text == passTest) {
+            if (buis.login(txt_usuario.Text, txt_contra.Text)) {
                 //Abrir menu y cerrar este formularoi
                 this.Hide();
-                MainFrm mnn = new MainFrm();
+
+                int id = buis.GetId(txt_usuario.Text, txt_contra.Text);
+                MainFrm mnn = new MainFrm(id);
                 mnn.Show();
             }else {
                 MessageBox.Show("Error, el usuario y la contraseña no coinciden");

@@ -13,7 +13,7 @@ namespace GangrenaShop.Main
 {
     public partial class MainFrm : Form
     {
-        
+        public int ID_sesion;
         protected override CreateParams CreateParams  // crea pequeña sombra en borderless form
         {
             get
@@ -30,8 +30,11 @@ namespace GangrenaShop.Main
             var form = Application.OpenForms.OfType<MenuPanelForm>().FirstOrDefault();
             MenuPanelForm hijo = form ?? new MenuPanelForm();
             AddFormInPanel(hijo);
+        }
 
-
+        public MainFrm(int id) {
+            ID_sesion = id;
+        
         }
 
         private void Main_Load(object sender, EventArgs e)
