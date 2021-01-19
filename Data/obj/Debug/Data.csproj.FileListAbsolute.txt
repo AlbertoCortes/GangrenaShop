@@ -10,3 +10,9 @@ E:\Data\Documentos\Proyectos\GangrenaShop\Data\obj\Debug\Data.csproj.CoreCompile
 E:\Data\Documentos\Proyectos\GangrenaShop\Data\obj\Debug\Data.csproj.CopyComplete
 E:\Data\Documentos\Proyectos\GangrenaShop\Data\obj\Debug\Data.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\Data\obj\Debug\Data.pdb
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\Common.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\Model.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\Newtonsoft.Json.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\Common.pdb
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\Model.pdb
+E:\Data\Documentos\Proyectos\GangrenaShop\Data\bin\Debug\Newtonsoft.Json.xml

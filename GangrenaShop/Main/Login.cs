@@ -75,7 +75,7 @@ namespace GangrenaShop.Main
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var r = dat.getEmpleados();
+            var r = dat.GetEmpleados();
             login();
         }
 

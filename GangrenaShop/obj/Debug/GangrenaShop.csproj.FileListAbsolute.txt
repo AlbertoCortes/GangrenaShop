@@ -52,3 +52,7 @@ E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Data.dll.config
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\EntityFramework.xml
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\EntityFramework.SqlServer.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\EntityFramework.SqlServer.xml
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Model.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Newtonsoft.Json.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Model.pdb
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Newtonsoft.Json.xml
