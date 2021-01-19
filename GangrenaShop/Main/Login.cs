@@ -9,7 +9,7 @@ namespace GangrenaShop.Main
         private string usuerTest = "beto15";
         private string passTest = "Iom77aa";
 
-        public Class1 dat = new Class1();
+        public DataClass dat = new DataClass();
         protected override CreateParams CreateParams  // crea pequeña sombra en borderless form
         {
             get
