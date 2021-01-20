@@ -1,4 +1,5 @@
 ﻿using GangrenaShop.PuntoVenta;
+using GangrenaShop.Usuarios;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -133,6 +134,13 @@ namespace GangrenaShop.Main
             MenuPanelForm hijo = form ?? new MenuPanelForm();
             AddFormInPanel(hijo);
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var form = Application.OpenForms.OfType<Empleados>().FirstOrDefault();
+            Empleados hijo = form ?? new Empleados();
+            AddFormInPanel(hijo);
         }
     }
 }

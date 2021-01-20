@@ -106,6 +106,27 @@ namespace Data
 
         }
 
+        public bool UpdateEmpleado(GS_Empleados empleado)
+        {
+            try
+            {
+                Empleados emp = model.Empleados.Where(d => d.id_empleado == empleado.id_empleado).FirstOrDefault();
+                emp.nombre = empleado.nombre;
+                emp.apellido_paterno = empleado.apellido_paterno;
+                emp.apellido_materno = empleado.apellido_materno;
+                emp.fecha_nacimiento = empleado.fecha_nacimiento;
+                emp.usuario = empleado.usuario;
+                emp.contrasena = empleado.contrasena;
+                emp.privilegios = empleado.privilegios;
+                model.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
 
 
     }

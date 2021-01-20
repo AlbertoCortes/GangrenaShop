@@ -75,5 +75,23 @@ namespace GangrenaShop.Usuarios
             }
             filldataGrid();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Nuevo nuevofrm = new Nuevo();
+            nuevofrm.Show();
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            filldataGrid();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow current = metroGrid1.CurrentRow;
+            var empleadotoEdit = buisnes.GetEmpleado(Convert.ToInt32(current.Cells["id"].Value));
+            Nuevo editForm = new Nuevo(empleadotoEdit);
+            editForm.Show();
+        }
     }
 }

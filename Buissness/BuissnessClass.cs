@@ -42,5 +42,10 @@ namespace Buissness
             return data.AddEmpleado(empleado);
         }
 
+
+        public bool UpdateEmpleado(GS_Empleados empleado)
+        {
+            return data.UpdateEmpleado(empleado);
+        }
     }
 }
