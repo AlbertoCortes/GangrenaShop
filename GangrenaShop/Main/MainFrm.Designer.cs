@@ -72,6 +72,7 @@ namespace GangrenaShop.Main
             this.button1 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel_menu.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -97,6 +98,7 @@ namespace GangrenaShop.Main
             this.superPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel_side_menu.SuspendLayout();
+            this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,7 +118,6 @@ namespace GangrenaShop.Main
             this.panel_menu.Name = "panel_menu";
             this.panel_menu.Size = new System.Drawing.Size(957, 634);
             this.panel_menu.TabIndex = 1;
-            this.panel_menu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_menu_Paint);
             // 
             // label8
             // 
@@ -149,7 +150,6 @@ namespace GangrenaShop.Main
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(162, 197);
             this.panel8.TabIndex = 0;
-            this.panel8.MouseHover += new System.EventHandler(this.panel8_MouseHover);
             // 
             // pictureBox6
             // 
@@ -192,7 +192,6 @@ namespace GangrenaShop.Main
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(162, 197);
             this.panel6.TabIndex = 0;
-            this.panel6.MouseHover += new System.EventHandler(this.panel6_MouseHover);
             // 
             // pictureBox5
             // 
@@ -235,7 +234,6 @@ namespace GangrenaShop.Main
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(162, 197);
             this.panel2.TabIndex = 0;
-            this.panel2.MouseHover += new System.EventHandler(this.panel2_MouseHover);
             // 
             // pictureBox4
             // 
@@ -279,7 +277,6 @@ namespace GangrenaShop.Main
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(162, 197);
             this.panel10.TabIndex = 0;
-            this.panel10.MouseHover += new System.EventHandler(this.panel10_MouseHover);
             // 
             // pictureBox7
             // 
@@ -322,7 +319,6 @@ namespace GangrenaShop.Main
             this.panelVideojuegos.Name = "panelVideojuegos";
             this.panelVideojuegos.Size = new System.Drawing.Size(162, 197);
             this.panelVideojuegos.TabIndex = 0;
-            this.panelVideojuegos.MouseHover += new System.EventHandler(this.panelVideojuegos_MouseHover);
             // 
             // pictureBox3
             // 
@@ -366,7 +362,6 @@ namespace GangrenaShop.Main
             this.panel_ventas.Size = new System.Drawing.Size(162, 197);
             this.panel_ventas.TabIndex = 0;
             this.panel_ventas.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panel_ventas_MouseDoubleClick);
-            this.panel_ventas.MouseHover += new System.EventHandler(this.panel_ventas_MouseHover);
             // 
             // pictureBox2
             // 
@@ -606,6 +601,7 @@ namespace GangrenaShop.Main
             // 
             // panel13
             // 
+            this.panel13.Controls.Add(this.label9);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Name = "panel13";
@@ -623,8 +619,21 @@ namespace GangrenaShop.Main
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDoubleClick);
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label9.Location = new System.Drawing.Point(13, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 20);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "label9";
             // 
             // MainFrm
             // 
@@ -640,7 +649,6 @@ namespace GangrenaShop.Main
             this.Padding = new System.Windows.Forms.Padding(1);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
-            this.Load += new System.EventHandler(this.Main_Load);
             this.panel_menu.ResumeLayout(false);
             this.panel_menu.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -673,6 +681,8 @@ namespace GangrenaShop.Main
             this.superPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel_side_menu.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -722,5 +732,6 @@ namespace GangrenaShop.Main
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel superPanel;
+        private System.Windows.Forms.Label label9;
     }
 }

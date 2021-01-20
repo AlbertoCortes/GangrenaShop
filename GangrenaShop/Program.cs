@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GangrenaShop.Main;
+using GangrenaShop.Usuarios;
 
 namespace GangrenaShop
 {
@@ -17,7 +18,7 @@ namespace GangrenaShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new Nuevo());
         }
     }
 }

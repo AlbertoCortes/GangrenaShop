@@ -9,7 +9,7 @@ namespace GangrenaShop.Main
     public partial class Login : Form
     {
 
-        public DataClass dat = new DataClass();
+       // public DataClass dat = new DataClass();
         public BuissnessClass buis = new BuissnessClass();
         protected override CreateParams CreateParams  // crea pequeña sombra en borderless form
         {
@@ -78,7 +78,7 @@ namespace GangrenaShop.Main
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var r = dat.GetEmpleados();
+           // var r = dat.GetEmpleados();
             login();
         }
 

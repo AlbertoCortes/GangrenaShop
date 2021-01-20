@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿using GangrenaShop.PuntoVenta;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using GangrenaShop.PuntoVenta;
+using Buissness;
+using Model;
 
 namespace GangrenaShop.Main
 {
     public partial class MainFrm : Form
     {
-        public int ID_sesion;
+        public bool ID_sesion; //Variable sesion admin true = admin / false = normal
+        public GS_Empleados empleado;
+
+        public BuissnessClass comun = new BuissnessClass();
         protected override CreateParams CreateParams  // crea pequeña sombra en borderless form
         {
             get
@@ -26,57 +25,25 @@ namespace GangrenaShop.Main
         }
         public MainFrm()
         {
+        }
+
+        public MainFrm(int id) {
             InitializeComponent();
             var form = Application.OpenForms.OfType<MenuPanelForm>().FirstOrDefault();
             MenuPanelForm hijo = form ?? new MenuPanelForm();
             AddFormInPanel(hijo);
-        }
-
-        public MainFrm(int id) {
-            ID_sesion = id;
+            GetEmpleado(id);
+            if(!empleado.privilegios)
+                {
+                    button2.Enabled = false;
+                    button3.Enabled = false;
+                    button4.Enabled = false;
+                    button5.Enabled = false;
+                    button6.Enabled = false;
+                }
+            label9.Text = empleado.nombre +' '+ empleado.apellido_paterno;
         
         }
-
-        private void Main_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel_menu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel_ventas_MouseHover(object sender, EventArgs e)
-        {
-            panel_ventas.Cursor = System.Windows.Forms.Cursors.Hand;
-        }
-
-        private void panelVideojuegos_MouseHover(object sender, EventArgs e)
-        {
-            panelVideojuegos.Cursor = System.Windows.Forms.Cursors.Hand;
-        }
-
-        private void panel2_MouseHover(object sender, EventArgs e)
-        {
-            panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-        }
-
-        private void panel6_MouseHover(object sender, EventArgs e)
-        {
-            panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-        }
-
-        private void panel8_MouseHover(object sender, EventArgs e)
-        {
-            panel8.Cursor = System.Windows.Forms.Cursors.Hand;
-        }
-
-        private void panel10_MouseHover(object sender, EventArgs e)
-        {
-            panel10.Cursor = System.Windows.Forms.Cursors.Hand;
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             label7.Text = DateTime.Now.ToShortTimeString();
@@ -86,7 +53,7 @@ namespace GangrenaShop.Main
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
+        }//Cerrar button
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
@@ -98,9 +65,12 @@ namespace GangrenaShop.Main
             {
                 this.WindowState = FormWindowState.Normal;
             }
+        } // Minimizar Maximizar
+
+        private void GetEmpleado(int id) //Obtiene el valor de sesion de usuario
+        {
+            empleado = comun.GetEmpleado(id);
         }
-
-
 
 
 
@@ -134,7 +104,6 @@ namespace GangrenaShop.Main
             var form = Application.OpenForms.OfType<PuntoVentaForm>().FirstOrDefault();
             PuntoVentaForm hijo = form ?? new PuntoVentaForm();
             AddFormInPanel(hijo);   
-
         }
 
 
@@ -160,17 +129,9 @@ namespace GangrenaShop.Main
 
         private void pictureBox1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            
-            
             var form = Application.OpenForms.OfType<MenuPanelForm>().FirstOrDefault();
             MenuPanelForm hijo = form ?? new MenuPanelForm();
             AddFormInPanel(hijo);
-
-           // panel_menu.Show();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
         }
     }

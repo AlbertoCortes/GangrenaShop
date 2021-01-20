@@ -58,3 +58,8 @@ E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Model.pdb
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Newtonsoft.Json.xml
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Buissness.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\Buissness.pdb
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Usuarios.Empleados.resources
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\MetroFramework.Design.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\MetroFramework.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\MetroFramework.Fonts.dll
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Usuarios.Nuevo.resources
