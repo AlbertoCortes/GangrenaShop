@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using Buissness;
 using Model;
+using GangrenaShop.Productos;
 
 namespace GangrenaShop.Main
 {
@@ -140,6 +141,13 @@ namespace GangrenaShop.Main
         {
             var form = Application.OpenForms.OfType<Empleados>().FirstOrDefault();
             Empleados hijo = form ?? new Empleados();
+            AddFormInPanel(hijo);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var form = Application.OpenForms.OfType<ProductosFrm>().FirstOrDefault();
+            ProductosFrm hijo = form ?? new ProductosFrm();
             AddFormInPanel(hijo);
         }
     }

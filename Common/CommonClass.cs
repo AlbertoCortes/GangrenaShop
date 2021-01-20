@@ -10,7 +10,8 @@ namespace Common
 {
     public class CommonClass
     {
-        public  Out SerializeJson<In, Out>(In obj)
+
+        public Out SerializeJson<In, Out>(In obj)
         {
             string output = JsonConvert.SerializeObject(obj);
             return JsonConvert.DeserializeObject<Out>(output);

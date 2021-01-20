@@ -63,3 +63,7 @@ E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\MetroFramework.
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\MetroFramework.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\MetroFramework.Fonts.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Usuarios.Nuevo.resources
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Productos.Categoria.resources
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Productos.Clasificacion.resources
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Productos.ProductosFrm.resources
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Productos.Nuevo.resources

@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GangrenaShop.Main;
-using GangrenaShop.Usuarios;
+//using GangrenaShop.Usuarios;
+using GangrenaShop.Productos;
 
 namespace GangrenaShop
 {

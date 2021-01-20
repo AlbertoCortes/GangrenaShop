@@ -9,6 +9,7 @@
 
 namespace Data
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -28,6 +29,7 @@ namespace Data
         public int existencias { get; set; }
         public int id_categoria { get; set; }
         public int id_clasificacion { get; set; }
+
         public int id_proveedor { get; set; }
     
         public virtual Categorias Categorias { get; set; }
