@@ -29,7 +29,7 @@
     <Property Name="fecha_nacimiento" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="correo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="telefono" Type="Int32" />
+    <Property Name="telefono" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
     <NavigationProperty Name="Ventas" Relationship="Self.FK_Ventas_Clientes" FromRole="Clientes" ToRole="Ventas" />
   </EntityType>
   <EntityType Name="Empleados">
@@ -53,8 +53,8 @@
     <Property Name="id_producto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="precio_compra" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
-    <Property Name="precio_venta" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="precio_compra" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="precio_venta" Type="Decimal" Precision="8" Scale="2" />
     <Property Name="existencias" Type="Int32" Nullable="false" />
     <Property Name="id_categoria" Type="Int32" Nullable="false" />
     <Property Name="id_clasificacion" Type="Int32" Nullable="false" />
@@ -72,7 +72,7 @@
     <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="nombre_de_contacto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="telefono" Type="Int32" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
     <Property Name="correo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="status" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="Productos" Relationship="Self.FK_Productos_Proveedores" FromRole="Proveedores" ToRole="Productos" />

@@ -50,7 +50,6 @@ namespace GangrenaShop.Usuarios
             }
             NuevoEditar = false;
             empleadoToUpdate = empleado;
-
         }
 
         public GS_Empleados ObtenerDatos()
@@ -108,10 +107,6 @@ namespace GangrenaShop.Usuarios
                         this.Close();
                     }
                 }
-
-
-                
-
             }
         }
 

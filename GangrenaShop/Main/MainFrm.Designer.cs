@@ -535,6 +535,7 @@ namespace GangrenaShop.Main
             this.button4.TabIndex = 1;
             this.button4.Text = "Proveedor";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -556,6 +557,7 @@ namespace GangrenaShop.Main
             this.button3.TabIndex = 1;
             this.button3.Text = "Clientes";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 

@@ -12,7 +12,6 @@ A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\Common\obj\Debug\Com
 A:\Documentos\7 tetra\Base de datos 3\Proyecto\GangrenaShop\Common\obj\Debug\Common.pdb
 E:\Data\Documentos\Proyectos\GangrenaShop\Common\bin\Debug\Common.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\Common\bin\Debug\Common.pdb
-E:\Data\Documentos\Proyectos\GangrenaShop\Common\obj\Debug\Common.csprojAssemblyReference.cache
 E:\Data\Documentos\Proyectos\GangrenaShop\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
 E:\Data\Documentos\Proyectos\GangrenaShop\Common\obj\Debug\Common.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\Common\obj\Debug\Common.pdb

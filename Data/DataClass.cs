@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Common;
+using System.Data.Entity.SqlServer;
 
 namespace Data
 {
@@ -13,6 +14,7 @@ namespace Data
 
         static GangrenaShopEntities model = new GangrenaShopEntities();
         static CommonClass com = new CommonClass();
+        private static string __hack = typeof(SqlProviderServices).ToString();
 
         public bool LoginCheck (string user, string pass)
         {
@@ -171,7 +173,7 @@ namespace Data
                 model.SaveChanges();
                 return true;
             }
-            catch
+            catch(Exception e)
             {
                 return false;
             }
@@ -211,7 +213,7 @@ namespace Data
                 model.SaveChanges();
                 return true;
             }
-            catch
+            catch(Exception e)
             {
                 return false;
             }
@@ -270,6 +272,163 @@ namespace Data
         }
 
 
+        //--------------------------------------------------------------------------------------------------------------------------------------
+
+        public List<GS_Clientes> GetAllClientes()
+        {
+            var obj = model.Clientes.ToList();
+            return com.SerializeJson<IEnumerable<Clientes>, List<GS_Clientes>>(obj);
+        }
+
+        public GS_Clientes GetCliente(int id)//Regresa todos los datos del cliente 
+        {
+            var obj = model.Clientes.ToList();
+            var cli = com.SerializeJson<IEnumerable<Clientes>, List<GS_Clientes>>(obj);
+            return (from s in cli
+                    where s.id_cliente == id
+                    select s).First();
+        }
+
+        public bool AddCliente(GS_Clientes cliente)
+        {
+            try
+            {
+                Clientes cli = new Clientes();
+                cli.nombre = cliente.nombre;
+                cli.apellido_paterno = cliente.apellido_paterno;
+                cli.apellido_materno = cliente.apellido_materno;
+                cli.fecha_nacimiento = cliente.fecha_nacimiento;
+                cli.direccion = cliente.direccion;
+                cli.correo = cliente.correo;
+                cli.telefono = cliente.telefono;
+                model.Clientes.Add(cli);
+                model.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool UpdateCliente(GS_Clientes cliente)
+        {
+            try
+            {
+                Clientes cli = model.Clientes.Where(d => d.id_cliente == cliente.id_cliente).FirstOrDefault();
+                cli.nombre = cliente.nombre;
+                cli.apellido_paterno = cliente.apellido_paterno;
+                cli.apellido_materno = cliente.apellido_materno;
+                cli.fecha_nacimiento = cliente.fecha_nacimiento;
+                cli.direccion = cliente.direccion;
+                cli.correo = cliente.correo;
+                cli.telefono = cliente.telefono;
+                model.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool DeleteCliente(int id)
+        {
+            try
+            {
+                var obj = model.Clientes.ToList();
+                var cli = (from s in obj
+                            where s.id_cliente == id
+                            select s).FirstOrDefault();
+                model.Clientes.Remove(cli);
+                model.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+
+        //-----------------------------------------------------------------------------------------------------------------------------
+        public List<GS_Proveedores> GetAllProveedores()
+        {
+            var obj = model.Proveedores.ToList();
+            return com.SerializeJson<IEnumerable<Proveedores>, List<GS_Proveedores>>(obj);
+        }
+
+        public GS_Proveedores GetProveedor(int id)//Regresa todos los datos del cliente 
+        {
+            var obj = model.Proveedores.ToList();
+            var prov = com.SerializeJson<IEnumerable<Proveedores>, List<GS_Proveedores>>(obj);
+            return (from s in prov
+                    where s.id_proveedor == id
+                    select s).First();
+        }
+
+        public bool AddProveedor(GS_Proveedores proveedor)
+        {
+            try
+            {
+                Proveedores prov = new Proveedores();
+                prov.nombre = proveedor.nombre;
+                prov.nombre_de_contacto = proveedor.nombre_de_contacto;
+                prov.direccion = proveedor.direccion;
+                prov.telefono = proveedor.telefono;
+                prov.correo = proveedor.correo;
+                prov.status = proveedor.status;
+                model.Proveedores.Add(prov);
+                model.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool UpdateProveedor(GS_Proveedores proveedor)
+        {
+            try
+            {
+                Proveedores prov = model.Proveedores.Where(d => d.id_proveedor == proveedor.id_proveedor).FirstOrDefault();
+                prov.nombre = proveedor.nombre;
+                prov.nombre_de_contacto = proveedor.nombre;
+                prov.direccion = proveedor.direccion;
+                prov.telefono = proveedor.telefono;
+                prov.correo = proveedor.correo;
+                prov.status = proveedor.status;
+                model.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool DeleteProveedor(int id)
+        {
+            try
+            {
+                var obj = model.Proveedores.ToList();
+                var prov = (from s in obj
+                           where s.id_proveedor == id
+                           select s).FirstOrDefault();
+                model.Proveedores.Remove(prov);
+                model.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
 
     }
 }
+
+
+

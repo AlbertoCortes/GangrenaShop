@@ -6,13 +6,15 @@ using System.Windows.Forms;
 using Buissness;
 using Model;
 using GangrenaShop.Productos;
+using GangrenaShop.Clientes;
+using GangrenaShop.Proveedores;
 
 namespace GangrenaShop.Main
 {
     public partial class MainFrm : Form
     {
         public bool ID_sesion; //Variable sesion admin true = admin / false = normal
-        public GS_Empleados empleado;
+        public static GS_Empleados empleado;
 
         public BuissnessClass comun = new BuissnessClass();
         protected override CreateParams CreateParams  // crea pequeña sombra en borderless form
@@ -148,6 +150,20 @@ namespace GangrenaShop.Main
         {
             var form = Application.OpenForms.OfType<ProductosFrm>().FirstOrDefault();
             ProductosFrm hijo = form ?? new ProductosFrm();
+            AddFormInPanel(hijo);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var form = Application.OpenForms.OfType<ClientesFrm>().FirstOrDefault();
+            ClientesFrm hijo = form ?? new ClientesFrm();
+            AddFormInPanel(hijo);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var form = Application.OpenForms.OfType<ProveedoresFrm>().FirstOrDefault();
+            ProveedoresFrm hijo = form ?? new ProveedoresFrm();
             AddFormInPanel(hijo);
         }
     }

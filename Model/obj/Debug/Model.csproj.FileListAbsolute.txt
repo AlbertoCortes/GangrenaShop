@@ -2,8 +2,8 @@ E:\Data\Documentos\Proyectos\GangrenaShop\Model\bin\Debug\Model.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\Model\bin\Debug\Model.pdb
 E:\Data\Documentos\Proyectos\GangrenaShop\Model\bin\Debug\Newtonsoft.Json.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\Model\bin\Debug\Newtonsoft.Json.xml
-E:\Data\Documentos\Proyectos\GangrenaShop\Model\obj\Debug\Model.csprojAssemblyReference.cache
 E:\Data\Documentos\Proyectos\GangrenaShop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 E:\Data\Documentos\Proyectos\GangrenaShop\Model\obj\Debug\Model.csproj.CopyComplete
 E:\Data\Documentos\Proyectos\GangrenaShop\Model\obj\Debug\Model.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\Model\obj\Debug\Model.pdb
+E:\Data\Documentos\Proyectos\GangrenaShop\Model\obj\Debug\Model.csprojAssemblyReference.cache

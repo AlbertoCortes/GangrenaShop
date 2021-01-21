@@ -9,7 +9,6 @@
 
 namespace Data
 {
-    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -24,12 +23,11 @@ namespace Data
         public int id_producto { get; set; }
         public string nombre { get; set; }
         public string descripcion { get; set; }
-        public decimal precio_compra { get; set; }
-        public decimal precio_venta { get; set; }
+        public Nullable<decimal> precio_compra { get; set; }
+        public Nullable<decimal> precio_venta { get; set; }
         public int existencias { get; set; }
         public int id_categoria { get; set; }
         public int id_clasificacion { get; set; }
-
         public int id_proveedor { get; set; }
     
         public virtual Categorias Categorias { get; set; }

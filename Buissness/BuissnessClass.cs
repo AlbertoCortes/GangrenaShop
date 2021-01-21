@@ -14,6 +14,7 @@ namespace Buissness
             return data.LoginCheck(user, pass);
         }
 
+
         public int GetId(string user, string pass)
         {
             return data.GetId(user, pass);
@@ -130,6 +131,66 @@ namespace Buissness
                      select s.id_proveedor).FirstOrDefault();
             return id;           
         }
+
+        //---------------------------------------------------------------------------------------------------------------------------
+
+        public List<GS_Clientes> GetAllClientes()
+        {
+            return data.GetAllClientes();
+        }
+
+        public GS_Clientes GetCliente(int id)
+        {
+            return data.GetCliente(id);
+        }
+
+        public bool DeleteCliente(int id)
+        {
+            return data.DeleteCliente(id);
+        }
+
+        public bool AddCliente(GS_Clientes cliente)
+        {
+            return data.AddCliente(cliente);
+
+        }
+
+        public bool UpdateCliente(GS_Clientes cliente)
+        {
+            return data.UpdateCliente(cliente);
+        }
+
+
+
+        //------------------------------------------------------------------------------------------------
+
+        public List<GS_Proveedores> GetAllProveedores()
+        {
+            return data.GetAllProveedores();
+        }
+
+        public GS_Proveedores GetProveedor(int id)
+        {
+            return data.GetProveedor(id);
+        }
+
+        public bool DeleteProveedor(int id)
+        {
+            return data.DeleteProveedor(id);
+        }
+
+        public bool AddProveedor(GS_Proveedores proveedor)
+        {
+            return data.AddProveedor(proveedor);
+
+        }
+
+        public bool UpdateProveedor(GS_Proveedores proveedor)
+        {
+            return data.UpdateProveedor(proveedor);
+        }
+
+
 
 
 

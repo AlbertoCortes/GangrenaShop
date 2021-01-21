@@ -51,8 +51,8 @@ namespace GangrenaShop.Productos
             DialogResult dialogResult = MessageBox.Show("Eliminar Producto", "Eliminar", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                buisnes.DeleteEmpleado(id);
-                MessageBox.Show("Empleado Eliminado");
+                buisnes.DeleteProducto(id);
+                MessageBox.Show("Producto Eliminado");
             }
             filldataGrid();
         }

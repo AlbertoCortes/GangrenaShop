@@ -84,6 +84,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GS_Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="JsonIgrnoeAttribute.cs" />
     <Compile Include="Productos.cs">
       <DependentUpon>GS_Model.tt</DependentUpon>
     </Compile>

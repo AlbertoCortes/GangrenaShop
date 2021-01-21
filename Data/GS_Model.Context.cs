@@ -12,21 +12,14 @@ namespace Data
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    using System.Data.Entity.SqlServer;
-    using SqlProviderServices = System.Data.Entity.SqlServer.SqlProviderServices;/// <summary>
-    /// //////////////////////////////////////////////////////////////////
-    /// </summary>
-
-
+    
     public partial class GangrenaShopEntities : DbContext
     {
-
         public GangrenaShopEntities()
             : base("name=GangrenaShopEntities")
         {
-
         }
-
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

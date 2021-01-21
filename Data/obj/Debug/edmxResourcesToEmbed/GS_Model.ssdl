@@ -27,7 +27,7 @@
     <Property Name="fecha_nacimiento" Type="date" Nullable="false" />
     <Property Name="direccion" Type="text" Nullable="false" />
     <Property Name="correo" Type="nvarchar(max)" />
-    <Property Name="telefono" Type="int" />
+    <Property Name="telefono" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Empleados">
     <Key>
@@ -49,8 +49,8 @@
     <Property Name="id_producto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nombre" Type="nvarchar(max)" Nullable="false" />
     <Property Name="descripcion" Type="text" Nullable="false" />
-    <Property Name="precio_compra" Type="decimal" Precision="5" Scale="2" Nullable="false" />
-    <Property Name="precio_venta" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="precio_compra" Type="decimal" Precision="8" Scale="2" />
+    <Property Name="precio_venta" Type="decimal" Precision="8" Scale="2" />
     <Property Name="existencias" Type="int" Nullable="false" />
     <Property Name="id_categoria" Type="int" Nullable="false" />
     <Property Name="id_clasificacion" Type="int" Nullable="false" />
@@ -64,7 +64,7 @@
     <Property Name="nombre" Type="nvarchar(max)" Nullable="false" />
     <Property Name="nombre_de_contacto" Type="nvarchar(max)" Nullable="false" />
     <Property Name="direccion" Type="text" Nullable="false" />
-    <Property Name="telefono" Type="int" Nullable="false" />
+    <Property Name="telefono" Type="nvarchar(max)" />
     <Property Name="correo" Type="nvarchar(max)" Nullable="false" />
     <Property Name="status" Type="bit" Nullable="false" />
   </EntityType>

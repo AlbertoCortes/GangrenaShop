@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="GangrenaShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="GangrenaShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Categorias">
           <Key>
             <PropertyRef Name="id_categoria" />
@@ -32,7 +32,7 @@
           <Property Name="fecha_nacimiento" Type="date" Nullable="false" />
           <Property Name="direccion" Type="text" Nullable="false" />
           <Property Name="correo" Type="nvarchar(max)" />
-          <Property Name="telefono" Type="int" />
+          <Property Name="telefono" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Empleados">
           <Key>
@@ -54,8 +54,8 @@
           <Property Name="id_producto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nombre" Type="nvarchar(max)" Nullable="false" />
           <Property Name="descripcion" Type="text" Nullable="false" />
-          <Property Name="precio_compra" Type="decimal" Precision="5" Scale="2" Nullable="false" />
-          <Property Name="precio_venta" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+          <Property Name="precio_compra" Type="decimal" Precision="8" Scale="2" />
+          <Property Name="precio_venta" Type="decimal" Precision="8" Scale="2" />
           <Property Name="existencias" Type="int" Nullable="false" />
           <Property Name="id_categoria" Type="int" Nullable="false" />
           <Property Name="id_clasificacion" Type="int" Nullable="false" />
@@ -69,7 +69,7 @@
           <Property Name="nombre" Type="nvarchar(max)" Nullable="false" />
           <Property Name="nombre_de_contacto" Type="nvarchar(max)" Nullable="false" />
           <Property Name="direccion" Type="text" Nullable="false" />
-          <Property Name="telefono" Type="int" Nullable="false" />
+          <Property Name="telefono" Type="nvarchar(max)" />
           <Property Name="correo" Type="nvarchar(max)" Nullable="false" />
           <Property Name="status" Type="bit" Nullable="false" />
         </EntityType>
@@ -248,8 +248,7 @@ advertencia 6002: La tabla o vista 'GangrenaShop.dbo.Ventas_conceptos' no tiene 
             <End Role="Ventas" EntitySet="Ventas" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="GangrenaShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -282,7 +281,7 @@ advertencia 6002: La tabla o vista 'GangrenaShop.dbo.Ventas_conceptos' no tiene 
           <Property Name="fecha_nacimiento" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="correo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="telefono" Type="Int32" />
+          <Property Name="telefono" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
           <NavigationProperty Name="Ventas" Relationship="Self.FK_Ventas_Clientes" FromRole="Clientes" ToRole="Ventas" />
         </EntityType>
         <EntityType Name="Empleados">
@@ -306,8 +305,8 @@ advertencia 6002: La tabla o vista 'GangrenaShop.dbo.Ventas_conceptos' no tiene 
           <Property Name="id_producto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="precio_compra" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
-          <Property Name="precio_venta" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+          <Property Name="precio_compra" Type="Decimal" Precision="8" Scale="2" />
+          <Property Name="precio_venta" Type="Decimal" Precision="8" Scale="2" />
           <Property Name="existencias" Type="Int32" Nullable="false" />
           <Property Name="id_categoria" Type="Int32" Nullable="false" />
           <Property Name="id_clasificacion" Type="Int32" Nullable="false" />
@@ -325,7 +324,7 @@ advertencia 6002: La tabla o vista 'GangrenaShop.dbo.Ventas_conceptos' no tiene 
           <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="nombre_de_contacto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="telefono" Type="Int32" Nullable="false" />
+          <Property Name="telefono" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
           <Property Name="correo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="status" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Productos" Relationship="Self.FK_Productos_Proveedores" FromRole="Proveedores" ToRole="Productos" />
