@@ -152,10 +152,6 @@ namespace Data
                     select s).First();
         }
 
-
-
-
-
         public bool AddProducto(GS_Productos producto)
         {
             try
@@ -217,9 +213,7 @@ namespace Data
             {
                 return false;
             }
-
         }
-
         public bool AddCategoria(GS_Categorias categoria)
         {
             try
@@ -424,6 +418,59 @@ namespace Data
                 return false;
             }
         }
+
+
+
+
+        public bool GuardarVenta(GS_Ventas venta, List<GS_Ventas_conceptos> conceptos)
+        {
+            try
+            {
+                Ventas ven = new Ventas();
+                ven.fecha_venta = venta.fecha_venta;
+                ven.id_empleado = venta.id_empleado;
+                ven.id_cliente = venta.id_cliente;
+                ven.id_tipo_pago = 1;
+                model.Ventas.Add(ven);
+                
+                int id_venta = ven.id_venta;
+                foreach (var item in conceptos)
+                {
+                    Ventas_conceptos concepto = new Ventas_conceptos();
+                    concepto.id_venta = id_venta;
+                    concepto.id_producto = item.id_producto;
+                    concepto.cantidad = 1;
+
+                    Productos productom = (from s in model.Productos.ToList()
+                                     where s.id_producto == item.id_producto
+                                     select s).FirstOrDefault();
+
+                    productom.existencias -= 1;
+                    model.Ventas_conceptos.Add(concepto);
+                    
+                }
+                model.SaveChanges();
+                return true;
+            }
+            catch(Exception e)
+            {
+                return false;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -191,6 +191,14 @@ namespace Buissness
         }
 
 
+        //--------------------------------------------------------------------------------------------------------------
+
+        public bool GuardarVenta(GS_Ventas venta, List<GS_Ventas_conceptos> conceptos)
+        {
+            return data.GuardarVenta(venta, conceptos);
+        }
+
+
 
 
 

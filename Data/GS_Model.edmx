@@ -91,14 +91,11 @@
           <Property Name="id_cliente" Type="int" Nullable="false" />
           <Property Name="id_tipo_pago" Type="int" Nullable="false" />
         </EntityType>
-        <!--Errores durante la generación:
-advertencia 6002: La tabla o vista 'GangrenaShop.dbo.Ventas_conceptos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
         <EntityType Name="Ventas_conceptos">
           <Key>
-            <PropertyRef Name="id_venta" />
-            <PropertyRef Name="id_producto" />
-            <PropertyRef Name="cantidad" />
+            <PropertyRef Name="id_venta_concepto" />
           </Key>
+          <Property Name="id_venta_concepto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="id_venta" Type="int" Nullable="false" />
           <Property Name="id_producto" Type="int" Nullable="false" />
           <Property Name="cantidad" Type="int" Nullable="false" />
@@ -208,13 +205,7 @@ advertencia 6002: La tabla o vista 'GangrenaShop.dbo.Ventas_conceptos' no tiene 
           <EntitySet Name="Proveedores" EntityType="Self.Proveedores" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tipo_pago" EntityType="Self.Tipo_pago" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Ventas" EntityType="Self.Ventas" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Ventas_conceptos" EntityType="Self.Ventas_conceptos" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Ventas_conceptos].[id_venta] AS [id_venta], 
-    [Ventas_conceptos].[id_producto] AS [id_producto], 
-    [Ventas_conceptos].[cantidad] AS [cantidad]
-    FROM [dbo].[Ventas_conceptos] AS [Ventas_conceptos]</DefiningQuery>
-          </EntitySet>
+          <EntitySet Name="Ventas_conceptos" EntityType="Self.Ventas_conceptos" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_Productos_Categorias" Association="Self.FK_Productos_Categorias">
             <End Role="Categorias" EntitySet="Categorias" />
             <End Role="Productos" EntitySet="Productos" />
@@ -354,15 +345,14 @@ advertencia 6002: La tabla o vista 'GangrenaShop.dbo.Ventas_conceptos' no tiene 
         </EntityType>
         <EntityType Name="Ventas_conceptos">
           <Key>
-            <PropertyRef Name="id_venta" />
-            <PropertyRef Name="id_producto" />
-            <PropertyRef Name="cantidad" />
+            <PropertyRef Name="id_venta_concepto" />
           </Key>
           <Property Name="id_venta" Type="Int32" Nullable="false" />
           <Property Name="id_producto" Type="Int32" Nullable="false" />
           <Property Name="cantidad" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Productos" Relationship="Self.FK_Ventas_conceptos_Productos" FromRole="Ventas_conceptos" ToRole="Productos" />
           <NavigationProperty Name="Ventas" Relationship="Self.FK_Ventas_conceptos_Ventas" FromRole="Ventas_conceptos" ToRole="Ventas" />
+          <Property Name="id_venta_concepto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <Association Name="FK_Productos_Categorias">
           <End Role="Categorias" Type="Self.Categorias" Multiplicity="1" />
@@ -606,6 +596,7 @@ advertencia 6002: La tabla o vista 'GangrenaShop.dbo.Ventas_conceptos' no tiene 
           <EntitySetMapping Name="Ventas_conceptos">
             <EntityTypeMapping TypeName="GangrenaShopModel.Ventas_conceptos">
               <MappingFragment StoreEntitySet="Ventas_conceptos">
+                <ScalarProperty Name="id_venta_concepto" ColumnName="id_venta_concepto" />
                 <ScalarProperty Name="id_venta" ColumnName="id_venta" />
                 <ScalarProperty Name="id_producto" ColumnName="id_producto" />
                 <ScalarProperty Name="cantidad" ColumnName="cantidad" />

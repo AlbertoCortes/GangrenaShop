@@ -9,6 +9,7 @@
 
 namespace Data
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -33,6 +34,7 @@ namespace Data
         public virtual Categorias Categorias { get; set; }
         public virtual Clasificaciones Clasificaciones { get; set; }
         public virtual Proveedores Proveedores { get; set; }
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Ventas_conceptos> Ventas_conceptos { get; set; }
     }

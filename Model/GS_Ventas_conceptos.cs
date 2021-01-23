@@ -8,6 +8,8 @@ namespace Model
 {
     public class GS_Ventas_conceptos
     {
+        //  public int id_ventas_conceptos { get; set; }
+        public int id_venta_concepto { get; set; }
         public int id_venta { get; set; }
         public int id_producto { get; set; }
         public int cantidad { get; set; }

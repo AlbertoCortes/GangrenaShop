@@ -18,3 +18,4 @@ E:\Data\Documentos\Proyectos\GangrenaShop\Common\obj\Debug\Common.pdb
 E:\Data\Documentos\Proyectos\GangrenaShop\Common\bin\Debug\Newtonsoft.Json.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\Common\bin\Debug\Newtonsoft.Json.xml
 E:\Data\Documentos\Proyectos\GangrenaShop\Common\obj\Debug\Common.csproj.CopyComplete
+E:\Data\Documentos\Proyectos\GangrenaShop\Common\obj\Debug\Common.csprojAssemblyReference.cache
