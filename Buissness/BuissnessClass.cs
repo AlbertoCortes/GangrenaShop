@@ -198,7 +198,14 @@ namespace Buissness
             return data.GuardarVenta(venta, conceptos);
         }
 
-
+        public List<GS_Ventas> GetAllVentas()
+        {
+            return data.GetAllVentas();
+        }
+        public List<GS_Ventas_conceptos> GetAllConceptos()
+        {
+            return data.GetAllConceptos();
+        }
 
 
 

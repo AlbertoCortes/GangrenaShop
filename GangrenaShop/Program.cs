@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GangrenaShop.Admin;
 using GangrenaShop.Main;
 //using GangrenaShop.Usuarios;
 using GangrenaShop.Productos;
@@ -19,7 +20,7 @@ namespace GangrenaShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainFrm(2));
+            Application.Run(new Login());
         }
     }
 }

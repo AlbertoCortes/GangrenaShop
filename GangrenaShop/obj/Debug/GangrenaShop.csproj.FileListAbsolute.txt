@@ -71,3 +71,4 @@ E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\EntityFramework
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\EntityFramework.SqlServer.xml
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Proveedores.Nuevo.resources
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Proveedores.ProveedoresFrm.resources
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Admin.AdminFrm.resources

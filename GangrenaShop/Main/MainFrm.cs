@@ -8,6 +8,7 @@ using Model;
 using GangrenaShop.Productos;
 using GangrenaShop.Clientes;
 using GangrenaShop.Proveedores;
+using GangrenaShop.Admin;
 
 namespace GangrenaShop.Main
 {
@@ -165,6 +166,14 @@ namespace GangrenaShop.Main
             var form = Application.OpenForms.OfType<ProveedoresFrm>().FirstOrDefault();
             ProveedoresFrm hijo = form ?? new ProveedoresFrm();
             AddFormInPanel(hijo);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var form = Application.OpenForms.OfType<AdminFrm>().FirstOrDefault();
+            AdminFrm hijo = form ?? new AdminFrm();
+            AddFormInPanel(hijo);
+
         }
     }
 }

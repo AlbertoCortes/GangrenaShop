@@ -460,6 +460,20 @@ namespace Data
 
 
 
+        public List<GS_Ventas> GetAllVentas()
+        {
+            var obj = model.Ventas.ToList();
+            return com.SerializeJson<IEnumerable<Ventas>, List<GS_Ventas>>(obj);
+        }
+
+
+        public List<GS_Ventas_conceptos> GetAllConceptos()
+        {
+            var obj = model.Ventas_conceptos.ToList();
+            return com.SerializeJson<IEnumerable<Ventas_conceptos>, List<GS_Ventas_conceptos>>(obj);
+        }
+
+
 
 
 
