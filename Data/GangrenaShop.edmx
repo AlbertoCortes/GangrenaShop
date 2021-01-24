@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="GangrenaShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="GangrenaShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Categorias">
           <Key>
             <PropertyRef Name="id_categoria" />
@@ -239,7 +239,8 @@
             <End Role="Ventas" EntitySet="Ventas" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="GangrenaShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -272,7 +273,7 @@
           <Property Name="fecha_nacimiento" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="correo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="telefono" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="telefono" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Ventas" Relationship="Self.FK_Ventas_Clientes" FromRole="Clientes" ToRole="Ventas" />
         </EntityType>
         <EntityType Name="Empleados">
@@ -315,7 +316,7 @@
           <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="nombre_de_contacto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="telefono" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="telefono" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="correo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="status" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Productos" Relationship="Self.FK_Productos_Proveedores" FromRole="Proveedores" ToRole="Productos" />
@@ -347,12 +348,12 @@
           <Key>
             <PropertyRef Name="id_venta_concepto" />
           </Key>
+          <Property Name="id_venta_concepto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="id_venta" Type="Int32" Nullable="false" />
           <Property Name="id_producto" Type="Int32" Nullable="false" />
           <Property Name="cantidad" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Productos" Relationship="Self.FK_Ventas_conceptos_Productos" FromRole="Ventas_conceptos" ToRole="Productos" />
           <NavigationProperty Name="Ventas" Relationship="Self.FK_Ventas_conceptos_Ventas" FromRole="Ventas_conceptos" ToRole="Ventas" />
-          <Property Name="id_venta_concepto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <Association Name="FK_Productos_Categorias">
           <End Role="Categorias" Type="Self.Categorias" Multiplicity="1" />
@@ -450,7 +451,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="GangrenaShopEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="GangrenaShopEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Categorias" EntityType="Self.Categorias" />
           <EntitySet Name="Clasificaciones" EntityType="Self.Clasificaciones" />
           <EntitySet Name="Clientes" EntityType="Self.Clientes" />
@@ -498,7 +499,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="GangrenaShopModelStoreContainer" CdmEntityContainer="GangrenaShopEntities">
+        <EntityContainerMapping StorageEntityContainer="GangrenaShopModelStoreContainer" CdmEntityContainer="GangrenaShopEntities1">
           <EntitySetMapping Name="Categorias">
             <EntityTypeMapping TypeName="GangrenaShopModel.Categorias">
               <MappingFragment StoreEntitySet="Categorias">

@@ -57,73 +57,60 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categorias.cs">
-      <DependentUpon>GS_Model.tt</DependentUpon>
+      <DependentUpon>GangrenaShop.tt</DependentUpon>
     </Compile>
     <Compile Include="Clasificaciones.cs">
-      <DependentUpon>GS_Model.tt</DependentUpon>
+      <DependentUpon>GangrenaShop.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.cs">
+      <DependentUpon>GangrenaShop.tt</DependentUpon>
     </Compile>
     <Compile Include="DataClass.cs" />
-    <Compile Include="Clientes.cs">
-      <DependentUpon>GS_Model.tt</DependentUpon>
-    </Compile>
     <Compile Include="Empleados.cs">
-      <DependentUpon>GS_Model.tt</DependentUpon>
+      <DependentUpon>GangrenaShop.tt</DependentUpon>
     </Compile>
-    <Compile Include="GS_Model.Context.cs">
+    <Compile Include="GangrenaShop.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GS_Model.Context.tt</DependentUpon>
+      <DependentUpon>GangrenaShop.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="GS_Model.cs">
+    <Compile Include="GangrenaShop.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GS_Model.tt</DependentUpon>
+      <DependentUpon>GangrenaShop.tt</DependentUpon>
     </Compile>
-    <Compile Include="GS_Model.Designer.cs">
+    <Compile Include="GangrenaShop.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GS_Model.edmx</DependentUpon>
+      <DependentUpon>GangrenaShop.edmx</DependentUpon>
     </Compile>
-    <Compile Include="JsonIgrnoeAttribute.cs" />
     <Compile Include="Productos.cs">
-      <DependentUpon>GS_Model.tt</DependentUpon>
+      <DependentUpon>GangrenaShop.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proveedores.cs">
-      <DependentUpon>GS_Model.tt</DependentUpon>
+      <DependentUpon>GangrenaShop.tt</DependentUpon>
     </Compile>
     <Compile Include="Tipo_pago.cs">
-      <DependentUpon>GS_Model.tt</DependentUpon>
+      <DependentUpon>GangrenaShop.tt</DependentUpon>
     </Compile>
     <Compile Include="Ventas.cs">
-      <DependentUpon>GS_Model.tt</DependentUpon>
+      <DependentUpon>GangrenaShop.tt</DependentUpon>
     </Compile>
     <Compile Include="Ventas_conceptos.cs">
-      <DependentUpon>GS_Model.tt</DependentUpon>
+      <DependentUpon>GangrenaShop.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="GS_Model.edmx">
+    <EntityDeploy Include="GangrenaShop.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>GS_Model.Designer.cs</LastGenOutput>
+      <LastGenOutput>GangrenaShop.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="GS_Model.edmx.diagram">
-      <DependentUpon>GS_Model.edmx</DependentUpon>
+    <None Include="GangrenaShop.edmx.diagram">
+      <DependentUpon>GangrenaShop.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="GS_Model.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GS_Model.edmx</DependentUpon>
-      <LastGenOutput>GS_Model.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="GS_Model.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GS_Model.edmx</DependentUpon>
-      <LastGenOutput>GS_Model.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -137,6 +124,18 @@
       <Project>{f3e6aaec-7d84-4230-9846-2bc096bc76ba}</Project>
       <Name>Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GangrenaShop.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GangrenaShop.edmx</DependentUpon>
+      <LastGenOutput>GangrenaShop.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="GangrenaShop.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GangrenaShop.edmx</DependentUpon>
+      <LastGenOutput>GangrenaShop.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

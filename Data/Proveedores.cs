@@ -28,7 +28,7 @@ namespace Data
         public string telefono { get; set; }
         public string correo { get; set; }
         public bool status { get; set; }
-        
+
         [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Productos> Productos { get; set; }

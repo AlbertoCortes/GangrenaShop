@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GangrenaShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Categorias">
+    <Key>
+      <PropertyRef Name="id_categoria" />
+    </Key>
+    <Property Name="id_categoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Productos" Relationship="Self.FK_Productos_Categorias" FromRole="Categorias" ToRole="Productos" />
+  </EntityType>
+  <EntityType Name="Clasificaciones">
+    <Key>
+      <PropertyRef Name="id_clasificacion" />
+    </Key>
+    <Property Name="id_clasificacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Productos" Relationship="Self.FK_Productos_Clasificaciones" FromRole="Clasificaciones" ToRole="Productos" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="id_cliente" />
+    </Key>
+    <Property Name="id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="apellido_paterno" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="apellido_materno" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fecha_nacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="correo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="telefono" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Ventas" Relationship="Self.FK_Ventas_Clientes" FromRole="Clientes" ToRole="Ventas" />
+  </EntityType>
+  <EntityType Name="Empleados">
+    <Key>
+      <PropertyRef Name="id_empleado" />
+    </Key>
+    <Property Name="id_empleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="apellido_paterno" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="apellido_materno" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fecha_nacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="usuario" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="contrasena" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="privilegios" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Ventas" Relationship="Self.FK_Ventas_Empleados" FromRole="Empleados" ToRole="Ventas" />
+  </EntityType>
+  <EntityType Name="Productos">
+    <Key>
+      <PropertyRef Name="id_producto" />
+    </Key>
+    <Property Name="id_producto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="precio_compra" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="precio_venta" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="existencias" Type="Int32" Nullable="false" />
+    <Property Name="id_categoria" Type="Int32" Nullable="false" />
+    <Property Name="id_clasificacion" Type="Int32" Nullable="false" />
+    <Property Name="id_proveedor" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Categorias" Relationship="Self.FK_Productos_Categorias" FromRole="Productos" ToRole="Categorias" />
+    <NavigationProperty Name="Clasificaciones" Relationship="Self.FK_Productos_Clasificaciones" FromRole="Productos" ToRole="Clasificaciones" />
+    <NavigationProperty Name="Proveedores" Relationship="Self.FK_Productos_Proveedores" FromRole="Productos" ToRole="Proveedores" />
+    <NavigationProperty Name="Ventas_conceptos" Relationship="Self.FK_Ventas_conceptos_Productos" FromRole="Productos" ToRole="Ventas_conceptos" />
+  </EntityType>
+  <EntityType Name="Proveedores">
+    <Key>
+      <PropertyRef Name="id_proveedor" />
+    </Key>
+    <Property Name="id_proveedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="nombre_de_contacto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="telefono" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="correo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="status" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Productos" Relationship="Self.FK_Productos_Proveedores" FromRole="Proveedores" ToRole="Productos" />
+  </EntityType>
+  <EntityType Name="Tipo_pago">
+    <Key>
+      <PropertyRef Name="id_tipo_pago" />
+    </Key>
+    <Property Name="id_tipo_pago" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Ventas" Relationship="Self.FK_Ventas_Tipo_pago" FromRole="Tipo_pago" ToRole="Ventas" />
+  </EntityType>
+  <EntityType Name="Ventas">
+    <Key>
+      <PropertyRef Name="id_venta" />
+    </Key>
+    <Property Name="id_venta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha_venta" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="id_empleado" Type="Int32" Nullable="false" />
+    <Property Name="id_cliente" Type="Int32" Nullable="false" />
+    <Property Name="id_tipo_pago" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Clientes" Relationship="Self.FK_Ventas_Clientes" FromRole="Ventas" ToRole="Clientes" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_Ventas_Empleados" FromRole="Ventas" ToRole="Empleados" />
+    <NavigationProperty Name="Tipo_pago" Relationship="Self.FK_Ventas_Tipo_pago" FromRole="Ventas" ToRole="Tipo_pago" />
+    <NavigationProperty Name="Ventas_conceptos" Relationship="Self.FK_Ventas_conceptos_Ventas" FromRole="Ventas" ToRole="Ventas_conceptos" />
+  </EntityType>
+  <EntityType Name="Ventas_conceptos">
+    <Key>
+      <PropertyRef Name="id_venta_concepto" />
+    </Key>
+    <Property Name="id_venta_concepto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_venta" Type="Int32" Nullable="false" />
+    <Property Name="id_producto" Type="Int32" Nullable="false" />
+    <Property Name="cantidad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Productos" Relationship="Self.FK_Ventas_conceptos_Productos" FromRole="Ventas_conceptos" ToRole="Productos" />
+    <NavigationProperty Name="Ventas" Relationship="Self.FK_Ventas_conceptos_Ventas" FromRole="Ventas_conceptos" ToRole="Ventas" />
+  </EntityType>
+  <Association Name="FK_Productos_Categorias">
+    <End Role="Categorias" Type="Self.Categorias" Multiplicity="1" />
+    <End Role="Productos" Type="Self.Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorias">
+        <PropertyRef Name="id_categoria" />
+      </Principal>
+      <Dependent Role="Productos">
+        <PropertyRef Name="id_categoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Productos_Clasificaciones">
+    <End Role="Clasificaciones" Type="Self.Clasificaciones" Multiplicity="1" />
+    <End Role="Productos" Type="Self.Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clasificaciones">
+        <PropertyRef Name="id_clasificacion" />
+      </Principal>
+      <Dependent Role="Productos">
+        <PropertyRef Name="id_clasificacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ventas_Clientes">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+    <End Role="Ventas" Type="Self.Ventas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="id_cliente" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ventas_Empleados">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="1" />
+    <End Role="Ventas" Type="Self.Ventas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="id_empleado" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="id_empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Productos_Proveedores">
+    <End Role="Proveedores" Type="Self.Proveedores" Multiplicity="1" />
+    <End Role="Productos" Type="Self.Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedores">
+        <PropertyRef Name="id_proveedor" />
+      </Principal>
+      <Dependent Role="Productos">
+        <PropertyRef Name="id_proveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ventas_conceptos_Productos">
+    <End Role="Productos" Type="Self.Productos" Multiplicity="1" />
+    <End Role="Ventas_conceptos" Type="Self.Ventas_conceptos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Productos">
+        <PropertyRef Name="id_producto" />
+      </Principal>
+      <Dependent Role="Ventas_conceptos">
+        <PropertyRef Name="id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ventas_Tipo_pago">
+    <End Role="Tipo_pago" Type="Self.Tipo_pago" Multiplicity="1" />
+    <End Role="Ventas" Type="Self.Ventas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tipo_pago">
+        <PropertyRef Name="id_tipo_pago" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="id_tipo_pago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ventas_conceptos_Ventas">
+    <End Role="Ventas" Type="Self.Ventas" Multiplicity="1" />
+    <End Role="Ventas_conceptos" Type="Self.Ventas_conceptos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ventas">
+        <PropertyRef Name="id_venta" />
+      </Principal>
+      <Dependent Role="Ventas_conceptos">
+        <PropertyRef Name="id_venta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GangrenaShopEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categorias" EntityType="Self.Categorias" />
+    <EntitySet Name="Clasificaciones" EntityType="Self.Clasificaciones" />
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+    <EntitySet Name="Empleados" EntityType="Self.Empleados" />
+    <EntitySet Name="Productos" EntityType="Self.Productos" />
+    <EntitySet Name="Proveedores" EntityType="Self.Proveedores" />
+    <EntitySet Name="Tipo_pago" EntityType="Self.Tipo_pago" />
+    <EntitySet Name="Ventas" EntityType="Self.Ventas" />
+    <EntitySet Name="Ventas_conceptos" EntityType="Self.Ventas_conceptos" />
+    <AssociationSet Name="FK_Productos_Categorias" Association="Self.FK_Productos_Categorias">
+      <End Role="Categorias" EntitySet="Categorias" />
+      <End Role="Productos" EntitySet="Productos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Productos_Clasificaciones" Association="Self.FK_Productos_Clasificaciones">
+      <End Role="Clasificaciones" EntitySet="Clasificaciones" />
+      <End Role="Productos" EntitySet="Productos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ventas_Clientes" Association="Self.FK_Ventas_Clientes">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ventas_Empleados" Association="Self.FK_Ventas_Empleados">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Productos_Proveedores" Association="Self.FK_Productos_Proveedores">
+      <End Role="Proveedores" EntitySet="Proveedores" />
+      <End Role="Productos" EntitySet="Productos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ventas_conceptos_Productos" Association="Self.FK_Ventas_conceptos_Productos">
+      <End Role="Productos" EntitySet="Productos" />
+      <End Role="Ventas_conceptos" EntitySet="Ventas_conceptos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ventas_Tipo_pago" Association="Self.FK_Ventas_Tipo_pago">
+      <End Role="Tipo_pago" EntitySet="Tipo_pago" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ventas_conceptos_Ventas" Association="Self.FK_Ventas_conceptos_Ventas">
+      <End Role="Ventas" EntitySet="Ventas" />
+      <End Role="Ventas_conceptos" EntitySet="Ventas_conceptos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

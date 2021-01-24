@@ -72,3 +72,7 @@ E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\EntityFramework
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Proveedores.Nuevo.resources
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Proveedores.ProveedoresFrm.resources
 E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.Admin.AdminFrm.resources
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\GangrenaShop.exe.manifest
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\bin\Debug\GangrenaShop.application
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.exe.manifest
+E:\Data\Documentos\Proyectos\GangrenaShop\GangrenaShop\obj\Debug\GangrenaShop.application

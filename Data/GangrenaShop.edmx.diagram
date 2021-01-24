@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="48ae4849dba8469395f6b3fb1c3a7fff" Name="Diagram1">
+      <Diagram DiagramId="ad0ef20ca0fd487c926eda6aa09047f9" Name="Diagram1">
         <EntityTypeShape EntityType="GangrenaShopModel.Categorias" Width="1.5" PointX="0.75" PointY="12.625" IsExpanded="true" />
         <EntityTypeShape EntityType="GangrenaShopModel.Clasificaciones" Width="1.5" PointX="0.75" PointY="15.125" IsExpanded="true" />
         <EntityTypeShape EntityType="GangrenaShopModel.Clientes" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
@@ -13,7 +13,7 @@
         <EntityTypeShape EntityType="GangrenaShopModel.Proveedores" Width="1.5" PointX="0.75" PointY="17.625" IsExpanded="true" />
         <EntityTypeShape EntityType="GangrenaShopModel.Tipo_pago" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
         <EntityTypeShape EntityType="GangrenaShopModel.Ventas" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="GangrenaShopModel.Ventas_conceptos" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GangrenaShopModel.Ventas_conceptos" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
         <AssociationConnector Association="GangrenaShopModel.FK_Productos_Categorias" ManuallyRouted="false" />
         <AssociationConnector Association="GangrenaShopModel.FK_Productos_Clasificaciones" ManuallyRouted="false" />
         <AssociationConnector Association="GangrenaShopModel.FK_Ventas_Clientes" ManuallyRouted="false" />

@@ -6,4 +6,3 @@ E:\Data\Documentos\Proyectos\GangrenaShop\Model\obj\Debug\Model.csproj.CoreCompi
 E:\Data\Documentos\Proyectos\GangrenaShop\Model\obj\Debug\Model.csproj.CopyComplete
 E:\Data\Documentos\Proyectos\GangrenaShop\Model\obj\Debug\Model.dll
 E:\Data\Documentos\Proyectos\GangrenaShop\Model\obj\Debug\Model.pdb
-E:\Data\Documentos\Proyectos\GangrenaShop\Model\obj\Debug\Model.csprojAssemblyReference.cache

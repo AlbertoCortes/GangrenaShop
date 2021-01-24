@@ -12,7 +12,7 @@ namespace Data
     public class DataClass
     {
 
-        static GangrenaShopEntities model = new GangrenaShopEntities();
+        static GangrenaShopEntities1 model = new GangrenaShopEntities1();
         static CommonClass com = new CommonClass();
         private static string __hack = typeof(SqlProviderServices).ToString();
 
@@ -32,7 +32,7 @@ namespace Data
                     return false;
                 }
             }
-            catch
+            catch(Exception e)
             {
                 return false;
             }

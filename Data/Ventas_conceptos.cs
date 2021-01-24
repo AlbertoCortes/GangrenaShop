@@ -14,10 +14,10 @@ namespace Data
     
     public partial class Ventas_conceptos
     {
+        public int id_venta_concepto { get; set; }
         public int id_venta { get; set; }
         public int id_producto { get; set; }
         public int cantidad { get; set; }
-        public int id_venta_concepto { get; set; }
     
         public virtual Productos Productos { get; set; }
         public virtual Ventas Ventas { get; set; }
